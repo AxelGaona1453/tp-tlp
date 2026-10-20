@@ -214,6 +214,7 @@ npm run typecheck
 Este comando usa TypeScript para analizar tipos, pero **no ejecuta las pruebas**. Por otra parte, Node puede ejecutar los archivos `.ts` compatibles directamente, pero no comprueba sus tipos durante esa ejecución.
 
 **Pregunta:** ¿por qué conviene utilizar tanto `typecheck` como `npm test`?
+porque sirve para analizar los tipos y tambien ve que no estes utilizando un metodo que no existe 
 
 ## 9. Integración continua: extensión opcional
 
