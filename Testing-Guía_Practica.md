@@ -243,9 +243,23 @@ En la versión actualizada del proyecto, el workflow utiliza `npm install`. Desp
 ## 11. Preguntas de cierre
 
 1. ¿Qué diferencia hay entre comprobar manualmente una respuesta y ejecutar una prueba automatizada?
+
+La comprobación manual depende de que alguien revise el resultado; la prueba automática lo verifica siempre de la misma manera.
+
 2. ¿Cuál fue la causa de la primera prueba fallida?
+
+El descuento del 150 % daba -500 en vez de generar un error.
+
 3. ¿Por qué es útil incluir casos inválidos además de los casos habituales?
+
+Porque permite comprobar que el sistema rechace datos incorrectos y no falle de forma inesperada
+
 4. ¿Qué parte del sistema comprueba `tests/precios.test.ts` y qué partes comprueba `tests/api.test.ts`?
+
+precios.test.ts comprueba el cálculo; api.test.ts comprueba las respuestas HTTP y cómo se conecta la ruta con el cálculo.
+
 5. ¿Qué ventajas ofrece ejecutar las pruebas después de cada modificación?
+
+Ayuda a encontrar errores rápido y a confirmar que los cambios no hayan roto algo que ya funcionaba.
 
 **Referencias:** [Vitest](https://vitest.dev/guide/) · [Supertest](https://github.com/ladjs/supertest) · [Node.js: TypeScript](https://nodejs.org/api/typescript.html) · [GitHub Actions](https://docs.github.com/actions)
